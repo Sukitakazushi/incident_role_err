@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>check caller roles</description>
+        <field>caller_id</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>check_roles</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+		if ( newValue == '') {
+			return;
+		}
+	
+		var user = new GlideRecord(newValue);
+		
+		var isCallerUser = user.hasRole('incident_role_err');
+	
+		if(!isCallerUser){
+			alert("not caller");
+		}
+	}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-19 06:13:34</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>49509c7007619c103129f87e7c1ed0b6</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>check_roles</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="incident_role_err" source="x_500653_incident">b3d0047407219c103129f87e7c1ed0a6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="incident_role_err">b3d0047407219c103129f87e7c1ed0a6</sys_scope>
+        <sys_update_name>sys_script_client_49509c7007619c103129f87e7c1ed0b6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-19 06:42:53</sys_updated_on>
+        <table>incident</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="incident_role_err">b3d0047407219c103129f87e7c1ed0a6</application>
+        <file_path/>
+        <instance_id>7c14cf26dbbcd490e26fd7c8f49619ca</instance_id>
+        <instance_name>dev104146</instance_name>
+        <name>sys_script_client_49509c7007619c103129f87e7c1ed0b6</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description&gt;check caller roles&lt;/description&gt;&lt;field&gt;caller_id&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;check_roles&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+		if ( newValue == '') {
+			return;
+		}
+	
+		var user = new GlideRecord(newValue);
+		
+		var isCallerUser = user.hasRole('incident_role_err');
+	
+		if(!isCallerUser){
+			alert("not caller");
+		}
+	}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-06-19 06:13:34&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;49509c7007619c103129f87e7c1ed0b6&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name&gt;check_roles&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="incident_role_err" source="x_500653_incident"&gt;b3d0047407219c103129f87e7c1ed0a6&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="incident_role_err"&gt;b3d0047407219c103129f87e7c1ed0a6&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_49509c7007619c103129f87e7c1ed0b6&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-06-19 06:42:53&lt;/sys_updated_on&gt;&lt;table&gt;incident&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>134617402</payload_hash>
+        <record_name>check_roles</record_name>
+        <reverted_from/>
+        <source>94e1c07807219c103129f87e7c1ed00a</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-19 06:42:53</sys_created_on>
+        <sys_id>df4c50b807619c103129f87e7c1ed02b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>172cb50dd000000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-19 06:42:53</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>d74c50b860619c107a70236a1ec36e2b</update_guid>
+        <update_guid_history>d74c50b860619c107a70236a1ec36e2b:134617402,227b9078fd619c1078614f6958eab7e6:-436370069,deea507858619c10ab7d754a7c87d02d:1209614827,8faad4b4cd619c10ec831ebd743efa22:-815122198,46b694b43f619c10c8c6d0fa80c41ae9:-1163605171,3d951074ee619c1091f56bbe422df8ac:867345082</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-19 06:58:29</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>63df4db6c7c64c10bd37d54f40d55484</sys_id>
+        <sys_metadata>49509c7007619c103129f87e7c1ed0b6</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>check_roles</sys_name>
+        <sys_package display_value="incident_role_err" source="x_500653_incident">b3d0047407219c103129f87e7c1ed0a6</sys_package>
+        <sys_parent display_value="Incident">731aa1d82cd300100c1dbc48b5c9f529</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="incident_role_err">b3d0047407219c103129f87e7c1ed0a6</sys_scope>
+        <sys_scope_delete display_value="">75a3a63d65134ca08fa65445a789cf10</sys_scope_delete>
+        <sys_update_name>sys_script_client_49509c7007619c103129f87e7c1ed0b6</sys_update_name>
+        <sys_update_version display_value="sys_script_client_49509c7007619c103129f87e7c1ed0b6">df4c50b807619c103129f87e7c1ed02b</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-19 06:58:29</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

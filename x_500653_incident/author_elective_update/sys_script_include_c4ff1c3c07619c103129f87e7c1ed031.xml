@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_500653_incident.checkHasRole</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>checkHasRole</name>
+        <script><![CDATA[function checkHasRole(caller){
+	if(caller.has_role('x_500653_incident.caller_user')){
+		return true;
+	}else{
+		return false;
+	}
+}]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-19 07:04:55</sys_created_on>
+        <sys_id>c4ff1c3c07619c103129f87e7c1ed031</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name>checkHasRole</sys_name>
+        <sys_package display_value="incident_role_err" source="x_500653_incident">b3d0047407219c103129f87e7c1ed0a6</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="incident_role_err">b3d0047407219c103129f87e7c1ed0a6</sys_scope>
+        <sys_update_name>sys_script_include_c4ff1c3c07619c103129f87e7c1ed031</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-19 07:59:03</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="incident_role_err">b3d0047407219c103129f87e7c1ed0a6</application>
+        <file_path/>
+        <instance_id>7c14cf26dbbcd490e26fd7c8f49619ca</instance_id>
+        <instance_name>dev104146</instance_name>
+        <name>sys_script_include_c4ff1c3c07619c103129f87e7c1ed031</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_500653_incident.checkHasRole&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;checkHasRole&lt;/name&gt;&lt;script&gt;&lt;![CDATA[function checkHasRole(caller){
+	if(caller.has_role('x_500653_incident.caller_user')){
+		return true;
+	}else{
+		return false;
+	}
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-06-19 07:04:55&lt;/sys_created_on&gt;&lt;sys_id&gt;c4ff1c3c07619c103129f87e7c1ed031&lt;/sys_id&gt;&lt;sys_mod_count&gt;16&lt;/sys_mod_count&gt;&lt;sys_name&gt;checkHasRole&lt;/sys_name&gt;&lt;sys_package display_value="incident_role_err" source="x_500653_incident"&gt;b3d0047407219c103129f87e7c1ed0a6&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="incident_role_err"&gt;b3d0047407219c103129f87e7c1ed0a6&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_c4ff1c3c07619c103129f87e7c1ed031&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-06-19 07:59:03&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-2002022895</payload_hash>
+        <record_name>checkHasRole</record_name>
+        <reverted_from/>
+        <source>94e1c07807219c103129f87e7c1ed00a</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-19 07:59:03</sys_created_on>
+        <sys_id>c7bde8b407a19c103129f87e7c1ed08f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>172cb96977d0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-19 07:59:03</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>83bde4b498a19c10354a95fc43ba5823</update_guid>
+        <update_guid_history>83bde4b498a19c10354a95fc43ba5823:-2002022895,574d287425a19c10958c7e81c5779ace:1800055856,c41de0b4a3a19c1097723a7a1aad972b:106930424,355b2c34a7a19c10ab2f0892c4fd99ca:-1810769366,7eea6cf02aa19c10a72118dbaff8f7ae:-1350929580,02d928f001a19c105468300b1a75f45f:-1810769366,c669a4f0f1a19c10114a233aa86472e7:652771051,4be820f084a19c10f13dc3b96c675fc8:1172988321,c408a4b00aa19c10a0c8202acd2049ac:-1131945198,3416ec306da19c1043a1d24d3062c47e:329748592,2cc42cfcd3619c10198134efbf5756da:-1564838402,53e3ecbc82619c10de7e3284316a6f60:-2090965363,c353e8bc19619c109ec35b64abcb928a:896368485,4933ecbcb3619c1068a81d1d892f470d:1396203520,8db2e4bc31619c10b4abad2b025145b8:174779242,ab71a8f8df619c10a1cf17bf8f518ea4:-1564838402,ce5160b81f619c10f6257cd6c911daee:1348963700</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-19 08:18:32</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>c21129b3c91b494eb12ad9f3964464c4</sys_id>
+        <sys_metadata>c4ff1c3c07619c103129f87e7c1ed031</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>checkHasRole</sys_name>
+        <sys_package display_value="incident_role_err" source="x_500653_incident">b3d0047407219c103129f87e7c1ed0a6</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="incident_role_err">b3d0047407219c103129f87e7c1ed0a6</sys_scope>
+        <sys_scope_delete display_value="">75a3a63d65134ca08fa65445a789cf10</sys_scope_delete>
+        <sys_update_name>sys_script_include_c4ff1c3c07619c103129f87e7c1ed031</sys_update_name>
+        <sys_update_version display_value="sys_script_include_c4ff1c3c07619c103129f87e7c1ed031">c7bde8b407a19c103129f87e7c1ed08f</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-19 08:18:32</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

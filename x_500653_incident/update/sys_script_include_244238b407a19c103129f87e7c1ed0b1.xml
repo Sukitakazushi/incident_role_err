@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_500653_incident.CheckHasRole</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>CheckHasRole</name>
+        <script><![CDATA[var CheckHasRole = Class.create();
+CheckHasRole.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	cRole :function(){
+		var caller = new GlideRecord("sys_user_has_role");
+		caller.addQuery('user',this.getParameter('sysparm_callerID'));
+// 		caller.addQuery('role','c901c07407219c103129f87e7c1ed0e3');
+		caller.query();
+		while(caller.next()){
+			if(caller.role == 'c901c07407219c103129f87e7c1ed0e3'){
+				return "このユーザーはロールを持っています";
+			}
+		}
+		return "このユーザーはロールを持っていません";
+	},
+    type: 'CheckHasRole'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-19 08:28:11</sys_created_on>
+        <sys_id>244238b407a19c103129f87e7c1ed0b1</sys_id>
+        <sys_mod_count>35</sys_mod_count>
+        <sys_name>CheckHasRole</sys_name>
+        <sys_package display_value="incident_role_err" source="x_500653_incident">b3d0047407219c103129f87e7c1ed0a6</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="incident_role_err">b3d0047407219c103129f87e7c1ed0a6</sys_scope>
+        <sys_update_name>sys_script_include_244238b407a19c103129f87e7c1ed0b1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-22 08:13:52</sys_updated_on>
+    </sys_script_include>
+</record_update>
